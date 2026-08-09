@@ -1,8 +1,8 @@
-import { Calendar, Mail, MapPin, Phone } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { pageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { ContactForm } from './ContactForm';
-import { siteConfig } from '@/config/site';
+import { RegionalContact } from '@/components/RegionalContact';
 
 const description = 'Book a free WonderlyAR demo or ask us anything — we respond within 24 hours.';
 
@@ -57,49 +57,7 @@ const ContactPage = () => {
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-coral-light flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl">
-                    <Mail className="text-coral-dark h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-foreground mb-1 font-semibold">Email Us</h3>
-                    <a
-                      href={`mailto:${siteConfig.contact.email}`}
-                      className="text-muted-foreground hover:text-primary block transition-colors"
-                    >
-                      {siteConfig.contact.email}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-teal-light flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl">
-                    <Phone className="text-teal-dark h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-foreground mb-1 font-semibold">Call Us</h3>
-                    <a
-                      href="tel:+14378000190"
-                      className="text-muted-foreground hover:text-primary block transition-colors"
-                    >
-                      +1 437 8000 190
-                    </a>
-                    <p className="text-muted-foreground text-sm">Mon-Fri, 9am-6pm EST</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-sunny-light flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl">
-                    <MapPin className="text-accent-foreground h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-foreground mb-1 font-semibold">Our Office</h3>
-                    <p className="text-muted-foreground">2235 Melanie Court</p>
-                    <p className="text-muted-foreground">Burlington, Ontario, Canada L7P 2W8</p>
-                  </div>
-                </div>
-              </div>
+              <RegionalContact variant="full" />
 
               <div className="from-coral-light to-teal-light rounded-3xl bg-gradient-to-br p-8">
                 <h3 className="font-display text-foreground mb-2 font-bold">Response Time</h3>

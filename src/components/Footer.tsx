@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Sparkles, Mail, MapPin, Phone, TrendingUp } from 'lucide-react';
 import { InvestorNewsletterForm } from '@/components/InvestorNewsletterForm';
+import { RegionalContact } from '@/components/RegionalContact';
 import { getLegalConfig } from '@/lib/legal';
 import { siteConfig } from '@/config/site';
 
@@ -69,6 +70,7 @@ export async function Footer({ hasBlog = false }: { hasBlog?: boolean }) {
                   {siteConfig.contact.addressLines[1]}
                 </span>
               </div>
+              <RegionalContact variant="compact" />
             </div>
           </div>
 

@@ -29,6 +29,22 @@ function organizationNode(): SchemaNode {
       postalCode: 'L7P 2W8',
       addressCountry: 'CA',
     },
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        telephone: '+1-437-800-0190',
+        email: siteConfig.contact.email,
+        areaServed: 'Americas',
+      },
+      {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        telephone: '+91-96677-47082',
+        email: siteConfig.contact.email,
+        areaServed: ['IN', 'Asia-Pacific', 'Europe', 'Worldwide'],
+      },
+    ],
     sameAs: [siteConfig.social.twitter, siteConfig.social.linkedin],
     knowsAbout: [
       'augmented reality education',
