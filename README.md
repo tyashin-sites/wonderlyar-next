@@ -1,8 +1,8 @@
 # WonderlyAR — Tyashin Next.js site
 
 Customer storefront for **WonderlyAR** (AR learning platform for early childhood
-education, a brand of Aapastech Private Limited), ported from the original Lovable/Vite
-SPA to Next.js 15 (App Router) on Cloudflare Workers via OpenNext.
+education, a brand of Aapastech Private Limited), ported from the original Vite SPA
+to Next.js 15 (App Router) on Cloudflare Workers via OpenNext.
 
 - **Tyashin project:** `6a788b21adf117091b299967` (slug `aditya-website-mslvvasp`)
 - **Worker:** `site-wonderlyar-next`
