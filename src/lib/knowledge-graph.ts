@@ -29,7 +29,6 @@ function organizationNode(): SchemaNode {
       postalCode: 'L7P 2W8',
       addressCountry: 'CA',
     },
-    parentOrganization: { '@type': 'Organization', name: siteConfig.parentBrand },
     sameAs: [siteConfig.social.twitter, siteConfig.social.linkedin],
     knowsAbout: [
       'augmented reality education',

@@ -12,7 +12,7 @@
   ],
   "vars": {
     "TYASHIN_API_URL": "https://website-api.tyashin.com",
-    "NEXT_PUBLIC_SITE_DOMAIN": "aditya-website-mslvvasp.sites.tyashin.com",
+    "NEXT_PUBLIC_SITE_DOMAIN": "wonderlyar.com",
     "ROBOTS_NOINDEX": "false"
   }
 }

@@ -2,6 +2,7 @@ import { Calendar, Mail, MapPin, Phone } from 'lucide-react';
 import { pageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { ContactForm } from './ContactForm';
+import { siteConfig } from '@/config/site';
 
 const description = 'Book a free WonderlyAR demo or ask us anything — we respond within 24 hours.';
 
@@ -64,10 +65,10 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-foreground mb-1 font-semibold">Email Us</h3>
                     <a
-                      href="mailto:hello@thridify.com"
+                      href={`mailto:${siteConfig.contact.email}`}
                       className="text-muted-foreground hover:text-primary block transition-colors"
                     >
-                      hello@thridify.com
+                      {siteConfig.contact.email}
                     </a>
                   </div>
                 </div>

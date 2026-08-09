@@ -30,9 +30,15 @@ export async function getLegalConfig(): Promise<LegalConfig> {
     if (!res.ok) return { pages: [] };
     const data = (await res.json()) as {
       success?: boolean;
-      data?: { pages?: LegalPageMeta[]; copyrightText?: string };
+      data?: {
+        pages?: Record<string, { title?: string; slug?: string } | null>;
+        copyrightText?: string;
+      };
     };
-    const pages = Array.isArray(data?.data?.pages) ? data.data.pages : [];
+    const rawPages = data?.data?.pages ?? {};
+    const pages: LegalPageMeta[] = Object.values(rawPages)
+      .filter((p): p is { title?: string; slug?: string } => !!p && !!p.slug)
+      .map((p) => ({ slug: p.slug as string, title: p.title || (p.slug as string) }));
     return { pages, copyrightText: data?.data?.copyrightText };
   } catch {
     return { pages: [] };

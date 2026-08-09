@@ -45,10 +45,7 @@ export async function Footer({ hasBlog = false }: { hasBlog?: boolean }) {
               Transforming early childhood education with magical AR experiences that spark
               curiosity and make learning unforgettable.
             </p>
-            <p className="text-background/50 mb-6 text-sm">
-              A shadow brand of <span className="text-primary font-semibold">{siteConfig.parentBrand}</span>
-            </p>
-            <div className="text-background/70 space-y-3">
+            <div className="text-background/70 mt-6 space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="text-primary h-5 w-5 flex-shrink-0" />
                 <a
@@ -158,10 +155,7 @@ export async function Footer({ hasBlog = false }: { hasBlog?: boolean }) {
           <div className="text-background/50 text-center text-sm md:text-left">
             <p>
               {legal.copyrightText ||
-                `© ${new Date().getFullYear()} ${siteConfig.copyrightHolder} All rights reserved.`}
-            </p>
-            <p className="mt-1 text-xs">
-              {siteConfig.name} is a product of {siteConfig.parentBrand}
+                `© ${new Date().getFullYear()} ${siteConfig.copyrightHolder}. All rights reserved.`}
             </p>
           </div>
           {legal.pages.length > 0 && (

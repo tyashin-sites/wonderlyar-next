@@ -7,9 +7,7 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_TYASHIN_API_URL:
       process.env.TYASHIN_API_URL || "https://website-api.tyashin.com",
     NEXT_PUBLIC_PROJECT_ID: process.env.PROJECT_ID || "6a788b21adf117091b299967",
-    NEXT_PUBLIC_SITE_DOMAIN:
-      process.env.NEXT_PUBLIC_SITE_DOMAIN ||
-      "aditya-website-mslvvasp.sites.tyashin.com",
+    NEXT_PUBLIC_SITE_DOMAIN: process.env.NEXT_PUBLIC_SITE_DOMAIN || "wonderlyar.com",
   },
   images: {
     remotePatterns: [
