@@ -62,8 +62,8 @@ const ContactPage = () => {
               <div className="from-coral-light to-teal-light rounded-3xl bg-gradient-to-br p-8">
                 <h3 className="font-display text-foreground mb-2 font-bold">Response Time</h3>
                 <p className="text-muted-foreground">
-                  We typically respond within 24 hours during business days. For urgent inquiries,
-                  please call us directly.
+                  We typically respond within 24 hours during business days. For anything urgent,
+                  the fastest way to reach us is the chat button above.
                 </p>
               </div>
             </div>
