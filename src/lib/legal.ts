@@ -53,7 +53,9 @@ export async function getLegalPageHtml(
   try {
     const res = await fetch(
       `${API_URL}/api/v1/public/legal/${encodeURIComponent(slug)}?format=json`,
-      { headers: { 'X-API-Key': key }, next: { revalidate: 300 } }
+      // Admin-edited content on a rarely-visited route — always fetch fresh
+      // so admin edits (and takedowns) propagate immediately.
+      { headers: { 'X-API-Key': key }, cache: 'no-store' }
     );
     if (!res.ok) return null;
     const data = (await res.json()) as {
