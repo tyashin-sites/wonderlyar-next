@@ -34,7 +34,6 @@ export const REGIONS: Record<RegionKey, Region> = {
     email: siteConfig.contact.email,
     phone: '+1 437 8000 190',
     phoneHref: 'tel:+14378000190',
-    addressLines: ['2235 Melanie Court, Burlington,', 'Ontario, Canada L7P 2W8'],
   },
   eu: {
     key: 'eu',

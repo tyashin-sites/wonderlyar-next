@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sparkles, Mail, MapPin, Phone, TrendingUp } from 'lucide-react';
+import { Sparkles, Mail, Building2, Phone, TrendingUp } from 'lucide-react';
 import { InvestorNewsletterForm } from '@/components/InvestorNewsletterForm';
 import { RegionalContact } from '@/components/RegionalContact';
 import { getLegalConfig } from '@/lib/legal';
@@ -63,12 +63,8 @@ export async function Footer({ hasBlog = false }: { hasBlog?: boolean }) {
                 </a>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="text-primary mt-0.5 h-5 w-5 flex-shrink-0" />
-                <span>
-                  {siteConfig.contact.addressLines[0]}
-                  <br />
-                  {siteConfig.contact.addressLines[1]}
-                </span>
+                <Building2 className="text-primary mt-0.5 h-5 w-5 flex-shrink-0" />
+                <span>{siteConfig.organization}</span>
               </div>
               <RegionalContact variant="compact" />
             </div>

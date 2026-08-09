@@ -13,8 +13,8 @@ export const siteConfig = {
     phone: '+1 437 8000 190',
     phoneHref: 'tel:+14378000190',
     hours: 'Mon-Fri, 9am-6pm EST',
-    addressLines: ['2235 Melanie Court, Burlington,', 'Ontario, Canada L7P 2W8'],
   },
+  organization: 'Aapastech Private Limited',
   social: {
     twitter: 'https://twitter.com/WonderlyAR',
     linkedin: 'https://linkedin.com/company/wonderlyar',

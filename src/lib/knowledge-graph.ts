@@ -21,14 +21,6 @@ function organizationNode(): SchemaNode {
     description: siteConfig.description,
     email: siteConfig.contact.email,
     telephone: siteConfig.contact.phone,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '2235 Melanie Court',
-      addressLocality: 'Burlington',
-      addressRegion: 'Ontario',
-      postalCode: 'L7P 2W8',
-      addressCountry: 'CA',
-    },
     contactPoint: [
       {
         '@type': 'ContactPoint',
