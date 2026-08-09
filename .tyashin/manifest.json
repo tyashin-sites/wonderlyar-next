@@ -1,0 +1,34 @@
+{
+  "projectId": "6a788b21adf117091b299967",
+  "projectSlug": "aditya-website-mslvvasp",
+  "workerScriptName": "site-wonderlyar-next",
+  "framework": "nextjs",
+  "pages": [
+    "/",
+    "/how-it-works",
+    "/for-preschools",
+    "/for-educators",
+    "/content-library",
+    "/why-ar",
+    "/about",
+    "/contact",
+    "/blog",
+    "/blog/[slug]",
+    "/terms-and-conditions",
+    "/privacy-policy"
+  ],
+  "tyashinOwnedRoutes": [
+    "/brand-kit.css",
+    "/tyashin-runtime.js",
+    "/sitemap.xml",
+    "/robots.txt",
+    "/blog/rss.xml",
+    "/rss.xml",
+    "/feed",
+    "/feed.xml",
+    "/unsubscribe/<token>",
+    "/email-preferences/<token>",
+    "/privacy-request",
+    "/consent-center"
+  ]
+}
