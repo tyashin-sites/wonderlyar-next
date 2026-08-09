@@ -13,6 +13,6 @@
   "vars": {
     "TYASHIN_API_URL": "https://website-api.tyashin.com",
     "NEXT_PUBLIC_SITE_DOMAIN": "aditya-website-mslvvasp.sites.tyashin.com",
-    "ROBOTS_NOINDEX": "true"
+    "ROBOTS_NOINDEX": "false"
   }
 }
